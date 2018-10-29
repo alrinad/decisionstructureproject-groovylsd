@@ -23,46 +23,11 @@ public class IfElse {
       */
      public static void main(String[] args) throws FileNotFoundException {
           
-        /**
-         * Age checker
-         */
-        File file = new File("ages.txt");
-        Scanner scan = new Scanner(file);
-          
-        // Notify user of what they can do at each given age.
-        int age;
-        
-        
-        while(scan.hasNext()) {
-             age = scan.nextInt();
-             
-             //Check driving
-             if(age >= 16) {
-                  out.println("At age " + age + " a person is old enough to drive.");
-             } else {
-                  out.println("At age " + age + " a person is not old enough to drive.");
-             }
-             
-             //Check voting
-             if(age >= 18) {
-                  out.println("At age " + age + " a person is old enough to vote.");
-             } else {
-                  out.println("At age " + age + " a person is not old enough to vote.");
-             }
-             
-             //Check drinking
-             if(age >= 21) {
-                  out.println("At age " + age + " a person is old enough to drink.\n");
-             } else {
-                  out.println("At age " + age + " a person is not old enough to drink.\n");
-             }
-        }
-        
-        /**
-         * Quotients
-         */
-        file = new File("quotients.txt");
-        scan = new Scanner(file);
+         /**
+          * Quotients
+          */
+         File file = new File("quotients.txt");
+         Scanner scan = new Scanner(file);
         
         while(scan.hasNext()) {
              double a = scan.nextDouble();
@@ -89,8 +54,8 @@ public class IfElse {
              }
         }
         
-        /**
-         * 
-         */
+        
+         
+         
      }
 }
